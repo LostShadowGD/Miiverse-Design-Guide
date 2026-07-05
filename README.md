@@ -24,8 +24,6 @@ button {
 which produces:
 <iframe src="/button-example.html"></iframe>
 
-</html>
-
 ### Alternate White Button
 This button may end up being the most common style of button in your app. This button has the background colour <b>#ffffff</b> and text colour <b>#323232</b> with a drop shadow straight downwards.
 <br><br>
