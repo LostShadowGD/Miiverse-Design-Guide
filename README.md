@@ -22,30 +22,11 @@ button {
 }
 ```
 which produces:
-<html>
-    <head>
-        <style>
-            @font-face {
-                font-family: 'nintendo_NTLGDB_001';
-                src: url(nintendo_NTLGDB_001.woff);
-            }
+<iframe src="/button-example.html"></iframe>
 
-            button {
-                font-family: nintendo_NTLGDB_001;
-                background-color: #5ac800;
-                color: #f4f4f4;
-                border-radius: 12px;
-                height: 24px;
-                border: none;
-            }
-        </style>
-    </head>
-    <body>
-        <button>Button</button>
-    </body>
 </html>
 
-### Alternate White Button
+### Alternate White Button
 This button may end up being the most common style of button in your app. This button has the background colour <b>#ffffff</b> and text colour <b>#323232</b> with a drop shadow straight downwards.
 <br><br>
 Some example CSS to achieve this is:
@@ -62,41 +43,7 @@ button {
             }
 ```
 which produces:
-<html>
-    <head>
-        <style>
-            @font-face {
-                font-family: 'nintendo_NTLGDB_001';
-                src: url(nintendo_NTLGDB_001.woff);
-            }
-
-            button {
-                font-family: 'nintendo_NTLGDB_001';
-                background: #fff;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                text-align: left;
-                color: #323232;
-            }
-
-            .flex {
-                display: flex;
-                flex-direction: row;
-            }
-
-            cg {
-                margin: 0px;
-                margin-bottom: 4px;
-                color: #5ac800;
-            }
-        </style>
-    </head>
-    <body>
-        <button class="flex"><img src="/pfp.png"><span><cg>This button looks better</cg>when there's two lines of text and an image!</span></button>
-    </body>
-</html>
+<iframe src="/button2-example.html"></iframe>
 
 <br>
 This design can be implemented into many sizes, types and contents of element, from buttons to scrollable textboxes! Like this: <br>
@@ -118,32 +65,7 @@ button {
 
 <br>
 
-<html>
-    <head>
-        <style>
-            @font-face {
-                font-family: 'nintendo_NTLGDB_001';
-                src: url(nintendo_NTLGDB_001.woff);
-            }
-
-            button {
-                font-family: 'nintendo_NTLGDB_001';
-                background: #fff;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                overflow: scroll;
-                box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                text-align: left;
-                color: #323232;
-                max-width: 192px;
-                max-height: 192px;
-            }
-        </style>
-    </head>
-    <body>
-        <button>This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox! This is a long line of text to test the cool button-based textbox!</button>
-    </body>
-</html>
+<iframe src="/button2-example2.html"></iframe>
 
 <br>Remember to set ```overflow: scroll;``` and a max-width and max-height.
 
@@ -199,55 +121,7 @@ with the accompanying HTML:
 
 which results in:
 
-<html>
-    <head>
-        <style>
-            @font-face {
-                font-family: 'nintendo_NTLGDB_001';
-                src: url(nintendo_NTLGDB_001.woff);
-            }
-
-            img {
-                font-family: 'nintendo_NTLGDB_001';
-                background: #fff;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                overflow: scroll;
-                box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                text-align: left;
-                color: #323232;
-                max-width: 192px;
-                max-height: 192px;
-            }
-
-            p {
-                font-family: 'nintendo_NTLGDB_001';
-                color: #969696;
-                display: block;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                word-wrap: normal;
-                margin: 4px;
-            }
-
-            div {
-                background: #f9f9f9;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                width: fit-content;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <img src="minecraft.png"></img>
-            <p>Minecraft. Wow!</p>
-        </div>
-    </body>
-</html>
+<iframe src="/image-example.html"></iframe>
 
 ## Text Input
 
@@ -267,31 +141,7 @@ input {
 }
 ```
 
-<html>
-    <head>
-        <style>
-            @font-face {
-                font-family: 'nintendo_NTLGDB_001';
-                src: url(nintendo_NTLGDB_001.woff);
-            }
-
-            input {
-                font-family: 'nintendo_NTLGDB_001';
-                margin: 0 0 15px;
-                text-align: left;
-                background: #fff;
-                border: 3px solid #e0e0e0;
-                width: 100%;
-                border-radius: 5px;
-                box-sizing: border-box;
-                color: #323232;
-            }
-        </style>
-    </head>
-    <body>
-        <input style="width: 192px;" type="text" placeholder="Search...">
-    </body>
-</html>
+<iframe src="/textbox-example.html"></iframe>
 
 ## Credits
 - Nintendo (for Miiverse and the 3DS system font)
